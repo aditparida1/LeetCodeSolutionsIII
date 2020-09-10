@@ -12,13 +12,7 @@ public class LeetCodeSolutionsIII
 //        };
         
         //System.out.println(new KthSmallestinSortedMat378().kthSmallest(matrix, 9));
-        String[] a= new String[]{"1","10","100","11"};
-        Arrays.sort(a);
-        for(String s : a)
-        {
-            System.out.println(s);
-        }
-        a[0].compareTo(a[1]);
+        System.out.println(new Interview2().solution(new int[]{1,5,8}));
     }
     
 }
