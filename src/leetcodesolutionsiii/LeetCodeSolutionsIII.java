@@ -6,13 +6,10 @@ public class LeetCodeSolutionsIII
 
     public static void main(String[] args)
     {
-        //System.out.println(new CombinationSumIV377().combinationSum4(new int[]{5,1,8}, 24));
-//        int[][] matrix = new int[][]{
-//            {1,2,3},{4,5,6},{7,8,9}
-//        };
+        int[][] matrix = {{1,2,2,3,5},{3,2,3,4,4},{2,4,5,3,1},{6,7,1,4,5},{5,1,1,2,4}};
+        //List<List<Integer>> sks = new PacificAtlantic417().pacificAtlantic(matrix);
+        //Collections.sor
         
-        //System.out.println(new KthSmallestinSortedMat378().kthSmallest(matrix, 9));
-        System.out.println(new Interview2().solution(new int[]{1,5,8}));
     }
     
 }
