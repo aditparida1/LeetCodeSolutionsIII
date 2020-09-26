@@ -11,6 +11,7 @@ import java.util.*;
  */
 public class DecodeString394
 {
+    
     public String decodeString(String s) 
     {
         StringBuilder sb = new StringBuilder();

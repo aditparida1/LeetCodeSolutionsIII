@@ -6,10 +6,13 @@ public class LeetCodeSolutionsIII
 
     public static void main(String[] args)
     {
-        int[][] matrix = {{1,2,2,3,5},{3,2,3,4,4},{2,4,5,3,1},{6,7,1,4,5},{5,1,1,2,4}};
-        //List<List<Integer>> sks = new PacificAtlantic417().pacificAtlantic(matrix);
-        //Collections.sor
-        
+        String s = "3[a]2[bc]";
+        String[] split = s.split("[\\[\\]]");
+        for(String ip : split)
+        {
+            System.out.println(ip);
+        }
+        //return null;
     }
     
 }
