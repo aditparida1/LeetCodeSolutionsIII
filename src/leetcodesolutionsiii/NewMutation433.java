@@ -39,7 +39,6 @@ public class NewMutation433
                         }
                     }
                 }
-                
                 size --;
             }
         }
