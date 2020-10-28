@@ -8,7 +8,7 @@ public class ContiSubArraySum523
 {
     public boolean checkSubarraySum(int[] nums, int k) 
     {
-        if(nums == null || nums.length == 0 ||nums.length == 1)
+        if(nums == null || nums.length == 0 || nums.length == 1)
         {
             return false;
         }
