@@ -13,29 +13,20 @@ public class TaskScheduler621
 {
     public int leastInterval(char[] tasks, int n) 
     {
-        if(tasks == null)
-        {
-            return 0;
-        }
-        if(n == 0)
-        {
-            return tasks.length;
-        }
-        
-        HashMap<Character, Integer> map = new HashMap<Character, Integer>();
-        
+        int[] freq = new int[26];
         for (int i = 0; i < tasks.length; i++)
         {
-            if(map.containsKey(tasks[i]))
-            {
-                map.put(tasks[i], map.get(tasks[i]) + 1);
-            }
-            else
-            {
-                map.put(tasks[i], 1);
-            }
+            freq[tasks[i] - 65] += 1;
         }
+        Arrays.sort(freq);
         
-        return 0;
+        int addedGaps = (freq[freq.length - 1] - 1) * n;
+        
+        for(int i = freq.length - 2; i >= 0 && addedGaps > 0; --i)
+        {
+            addedGaps -= Math.min(freq[i] - 1, addedGaps);
+        }
+        addedGaps = Math.min(addedGaps, 0);
+        return tasks.length + addedGaps;
     }
 }
