@@ -25,14 +25,34 @@ public class CircularQueue622
     
     /** Insert an element into the circular queue. Return true if the operation is successful. */
     public boolean enQueue(int value) {
-        
+        if(isFull())
+        {
+            return false;
+        }
+        if(isEmpty())
+        {
+            front = 0;
+        }
+        back = increaseOneStep(back);
+        queue[back] = value;
         
         return true;
     }
     
     /** Delete an element from the circular queue. Return true if the operation is successful. */
     public boolean deQueue() {
-        
+        if(isEmpty())
+        {
+            return false;
+        }
+        if(front == back)
+        {
+            front = back = -1;
+        }
+        else
+        {
+            front = increaseOneStep(front);
+        }
         return true;
     }
     
