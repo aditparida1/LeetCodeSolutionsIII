@@ -5,7 +5,7 @@ public class LeetCodeSolutionsIII
 {
     public static void main(String[] args)
     {
-        System.out.println(new TwoKeysKeyboard650().minSteps(3));
+        System.out.println(new SplitArraytoConsecutiveSubSeq659().isPossible(new int[]{1,2,3,4,4,5}));
     }
     
 }
